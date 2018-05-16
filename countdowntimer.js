@@ -24,7 +24,8 @@ export default class CountdownTimer extends Component {
 
   componentWillMount() {
     if(this.state.timeRemaining < 0){
-      this.props.updateCustom(this.props.id);
+      /*倒计时结束*/
+      /*this.props.updateCustom(this.props.id);*/
     }else if(this.state.timeRemaining > MAX_ENDTIME) {
       this.updateRender(false);
     }
@@ -51,7 +52,8 @@ export default class CountdownTimer extends Component {
   tick() {
     let timeR = this.getTimeRemaining();
     if(timeR < 0){
-      this.props.updateCustom(this.props.id);
+      /*倒计时结束*/
+      /*this.props.updateCustom(this.props.id);*/
     }else if(timeR > MAX_ENDTIME) {
       this.updateTR(timeR);
     }else{
