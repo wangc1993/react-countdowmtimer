@@ -1,0 +1,32 @@
+$color: #f15a3d;
+.CountdownTimer {
+    position: absolute;
+    text-align: center;
+    right: 0;
+    bottom: -13px;
+    div {
+        display: inline-block;
+    }
+    .time {
+        background-color: $color;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 2px;
+        padding: 0 3px;
+    }
+    p {
+        color: $color;
+        font-size: 12px;
+        margin: 0 auto;
+        margin-bottom: -5px;
+        font-weight: 500;
+    }
+    .colon {
+        display: inline-block;
+        max-height: 24px;
+        margin: auto 2px;
+        font-size: 18px;
+        color: $color;
+        overflow: hidden;
+    }
+}
